@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: 'light',
-  themeColor: '#1e2b39',
+  themeColor: '#231f1b',
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ko" className={`bg-[#1e2b39] ${gowunBatang.variable}`}>
+    <html lang="ko" className={`bg-[#231f1b] ${gowunBatang.variable}`}>
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
